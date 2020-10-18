@@ -26,9 +26,9 @@ module.exports.run = async (client, message, args) => {
     .addField('架構', `${arch}`, true)
     .addField('作業系統', `${platform}`, true)
     .addField('Node.js版本', `${NodeVersion}`, true)
-    .addField('可用核心數', `目前還在嘗試中`, true)
-    .addField('CPU', `請自行填寫`, true)
-    .addField('RAM', `請自行填寫`, true)
+    .addField('可用核心數', `(還再嘗試是否可自動偵測)`, true)
+    .addField('CPU', `請自行填寫(還再嘗試是否可自動偵測)`, true)
+    .addField('RAM', `請自行填寫(還再嘗試是否可自動偵測)`, true)
     .setTimestamp()
     .setFooter(`指令使用者 ${message.author.tag}`, message.author.displayAvatarURL());
     message.channel.send(stats);
