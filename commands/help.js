@@ -15,9 +15,7 @@ module.exports.run = async (client, message, args) => {
       .addField("ℹ 主要指令", "gstart(創建抽獎)\ngreroll(重新抽獲獎者)\ngend(立即結束抽獎)", true)
       .setTimestamp()
       .setFooter(`指令使用者 ${message.author.tag}`, client.user.displayAvatarURL());
-    message.channel.send("**指令使用方法以私訊給您**");
-
-    return message.author.send(help);
+      message.channel.send(help);
 }
 
 module.exports.help = {
