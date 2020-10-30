@@ -27,7 +27,7 @@ exports.run = async (client, message, args) => {
             message.channel.send('此抽獎尚未結束，無法重新抽獎。');
         } else {
             console.error(e);
-            message.channel.send('發生錯誤，請聯絡機器人創建者幻影紅羽');
+            message.channel.send('發生錯誤，代碼0012');
         }
     });
 
