@@ -9,7 +9,7 @@ client.config = config;
 const { GiveawaysManager } = require('discord-giveaways');
 client.giveawaysManager = new GiveawaysManager(client, {
     storage: "./giveaways.json",
-    updateCountdownEvery: 1000,
+    updateCountdownEvery: 5000,
     default: {
         botsCanWin: false,
         embedColor: "#FF0000",
